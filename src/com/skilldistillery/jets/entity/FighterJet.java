@@ -2,6 +2,8 @@ package com.skilldistillery.jets.entity;
 
 public class FighterJet extends Jet implements CombatReady {
 
+	public FighterJet() { }
+	
 	public FighterJet(String model, int speed, int range, int price) {
 		super(model, speed, range, price);
 
@@ -9,8 +11,8 @@ public class FighterJet extends Jet implements CombatReady {
 
 	@Override
 	public void fight() {
-	// one line of code, sysou
-		
+	System.out.println("You're writing checks your body can't cash!");
+	
 	}
 
 	

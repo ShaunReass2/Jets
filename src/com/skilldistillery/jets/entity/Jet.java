@@ -7,6 +7,8 @@ public abstract class Jet {
 	private int range;
 	private int price;
 	
+	public Jet() { }
+	
 	public Jet(String model, int speed, int range, int price) {
 		super();
 		this.model = model;
@@ -15,13 +17,17 @@ public abstract class Jet {
 		this.price = price;
 	}
 	
+	public void fly() {
+	//needs to print outs the jet details and the amount of time the jet can fly until it runs out of fuel
+		System.out.println("Jet Model: " + model + ", Speed: " + speed + " mph " + ", Range: " + range + " miles " + ", Price: " + "$" + price + 
+				", Total Flight Time: " + (range / (speed / 60)) + " minutes"); 
+	
+	}
 
 	@Override
 	public String toString() {
-		return "Jet [model=" + model + ", speed=" + speed + ", range=" + range + ", price=" + price + "]";
+		return "Jet Model: " + model + ", Speed: " + speed + " mph " + ", Range: " + range + " miles " + ", Price: " + "$" + price;
 	}
-
-
 
 	public String getModel() {
 		return model;
