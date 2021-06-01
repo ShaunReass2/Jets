@@ -13,9 +13,10 @@ public class AirField {
 
 	public AirField() {
 
-//		jets = new ArrayList <>(); 
-//		initialize();
-
+	}
+	
+	public void addJet(Jet jet) {
+		this.jets.add(jet); 
 	}
 
 	public void initialize() {
@@ -44,7 +45,6 @@ public class AirField {
 				} else {
 					newJet = new JetImpl(model, speed, range, price);
 				}
-//				System.out.println(newJet);
 				jets.add(newJet);
 
 			}

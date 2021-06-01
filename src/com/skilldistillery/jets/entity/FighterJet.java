@@ -14,7 +14,5 @@ public class FighterJet extends Jet implements CombatReady {
 	System.out.println("You're writing checks your body can't cash!");
 	
 	}
-
-	
 	
 }
